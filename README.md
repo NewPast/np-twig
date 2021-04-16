@@ -1,3 +1,17 @@
+=== NP Twig: Front End for Custom Field & ACF ===
+
+Contributors: miniindustry
+Donate link: 
+Tags: custom fields, ACF, Fron End, display, timber, twig, tempalte
+Requires at least: 5.0
+Tested up to: 5.7.1
+Stable tag: 1.0.2
+Requires PHP: 7.0
+License: GPLv2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+
+Front End for Custom Field and Advance Custom Fields. and renders data using a twig template. It supports both free ACF and ACF pro
+
 WordPress and NP Twig: Front End for Custom Field and Advance Custom Fields. and renders data using a twig template. It supports both free ACF and ACF pro
 
 ## Installation

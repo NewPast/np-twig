@@ -46,23 +46,26 @@ Variables in templets are post title, post object, and custom fields. To output 
 
 The `if` statement in Twig check if a variable has a value or an expression evaluates to `true` We can add conditions to display any text. Let's say that we have a custom field named "agent" and want to display a text when the field agent contains a text. We can write
 
-<pre lang="twig">{% if agent %}
+```Twig
+{% if agent %}
     We have an agent in your area
     Our agent: {{ agent }}
-{% endif %}</pre>
-
+{% endif %}
+```
 another example; let's say that we have a field named price. We want to display a text if the price is zero
 
-<pre lang="twig">{% if price == 0 %}
+```Twig
+{% if price == 0 %}
    &lt;p&gt;This product is free&lt;/p&gt;
 {% endif %}
-</pre>
-
+```
 Please note that we use the operator `==` to check the equality You can also test if an array is not empty:
 
-<pre lang="twig">{% if meanings %}
+```Twig
+{% if meanings %}
    &lt;p&gt;The array or repeater field **meaning** contains some values&lt;/p&gt;
-{% endif %}</pre>
+{% endif %}
+```
 
 ### Closing condition block
 
@@ -74,20 +77,18 @@ If our field or variable is an array or a repeater field we can loop over each i
 
 #### The for statement code example
 
-<pre>{% for m in meanings %}
+```Twig
+{% for m in meanings %}
    Meaning: {{ m.meaning }}
-{% endfor %}</pre>
-
-
+{% endfor %}
+```
 #### The for statement format
-
 *   We use  `{% for m in meanings %}` to loop over an array or repeater field called `meanings` using **`m`** to mention for each row
 *   Inside the loop starts the subfields or array items with the variable name `**m.**`
 *   Always close the loop use `{% endfor %}`
 *   Read more about [the `for` keyword in twig](https://twig.symfony.com/doc/3.x/tags/for.html)
 
 ### Important notes for templates code
-
 *   In WordPress classic editor show source and ensure there are no tags inside the template code; ex `{% <del><span></del> endfor <del></span></del> %}`
 *   For more details, see: [https://twig.symfony.com/doc/2.x/](https://twig.symfony.com/doc/2.x/)
 
@@ -97,7 +98,8 @@ Using `if, endif, for and endfor` allows to generate a powerful template; howeve
 
 ### Template Example
 
-<pre>&lt;h2&gt;Meaning of {{ title }}&lt;/h2&gt;
+```Twig
+&lt;h2&gt;Meaning of {{ title }}&lt;/h2&gt;
 {# This is a comment and will not render #}
 {% for m in meanings %}
     {% if m.meaning %}
@@ -107,17 +109,18 @@ Using `if, endif, for and endfor` allows to generate a powerful template; howeve
         Example: {{ m.example }}
     {% endif %}
 {% endfor %}
-</pre>
+```
 
 ### Output post data
 
 We can access the post using the post keyword. to access any property of the post we put a dot (.)  and then we put the property name for example use `post.content` to access post content
 
-<pre lang="twig"><h2>{{ post.title }}</h2>
+```Twig
+<h2>{{ post.title }}</h2>
    <img src="{{ post.thumbnail.src }}" 
         alt="{{ post.thumbnail.alt }}" >
 {{ post.content }}
-</pre>
+```
 
 read more about accessing post content on [timber documents](https://timber.github.io/docs/v2)
 

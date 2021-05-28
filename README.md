@@ -165,6 +165,7 @@ read more about accessing post content on [timber documents](https://timber.gith
 ## Screenshots
 
 1. A screenshot of the template edit using WordPress classic editor.
+2. A screenshot of the post NP Twig setting
 
 ## Frequently Asked Questions about WordPress Front End for Custom Field
 

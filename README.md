@@ -56,14 +56,14 @@ another example; let's say that we have a field named price. We want to display 
 
 ```Twig
 {% if price == 0 %}
-   &lt;p&gt;This product is free&lt;/p&gt;
+   <p>This product is free</p>
 {% endif %}
 ```
 Please note that we use the operator `==` to check the equality You can also test if an array is not empty:
 
 ```Twig
 {% if meanings %}
-   &lt;p&gt;The array or repeater field **meaning** contains some values&lt;/p&gt;
+   <p>The array or repeater field **meaning** contains some values</p>
 {% endif %}
 ```
 
@@ -99,7 +99,7 @@ Using `if, endif, for and endfor` allows to generate a powerful template; howeve
 ### Template Example
 
 ```Twig
-&lt;h2&gt;Meaning of {{ title }}&lt;/h2&gt;
+<h2>Meaning of {{ title }}</h2>
 {# This is a comment and will not render #}
 {% for m in meanings %}
     {% if m.meaning %}

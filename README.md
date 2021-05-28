@@ -1,5 +1,8 @@
 NP Twig Front End for WordPress Custom Field and Advance Custom Fields. Renders data using a twig template. It supports both free ACF and ACF pro
 
+## Arabic Version of this Article
+* https://www.miniindustry.com/d/ar-np-twig
+
 ## Installation
 
 1.  Install Timber plugin: [https://wordpress.org/plugins/timber-library/](https://wordpress.org/plugins/timber-library/)
